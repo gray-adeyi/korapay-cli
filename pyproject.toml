@@ -1,16 +1,27 @@
 [project]
 name = "korapay-cli"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
+description = "A command line app for interacting with Korapay's API"
 authors = [
     { name = "Gbenga Adeyi", email = "adeyigbenga005@gmail.com" }
 ]
+keywords = ["korapay", "kora", "korahq"]
+license = "MIT"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "korapay-client>=0.1.0",
+    "typer-slim[standard]>=0.15.1",
+]
+readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
 
 [project.scripts]
-korapay-cli = "korapay_cli:main"
+kp = "korapay_cli:run"
+korapay = "korapay_cli:run"
 
 [build-system]
 requires = ["hatchling"]
