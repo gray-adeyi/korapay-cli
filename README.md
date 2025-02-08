@@ -52,7 +52,7 @@ Response(status_code=200, status=True, message='Request completed', data={'bank_
 ```
 
 By default, the results you get from the cli is a `Response` object which is a pydantic model returned
-by [korapay-client](https://gray-adeyi.github.io/korapay-client/). To get a json result, use the `--json`
+by [korapay-client](https://gray-adeyi.github.io/korapay_client/v0.1/). To get a json result, use the `--json`
 flag.
 
 ```bash
